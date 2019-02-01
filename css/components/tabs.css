@@ -1,0 +1,37 @@
+.tabs{
+  margin:10px;
+  background: #708090;
+  color:white;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+
+}
+.tabs h3{
+  font-weight: bolder;
+  font-size: 19px;
+}
+.tabs p{
+  font-weight: lighter;
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.tabs-item{
+  flex: 1 0 auto; /*all grow at the same way*/
+  background: #B0C4DE;
+  text-align: center;
+}
+
+.tabs-item:first-child{
+  border-radius: 10px 0 0 0;
+}
+.tabs-item:last-child{
+  border-radius: 0 10px 0 0;
+}
+
+.tabs-item.active{
+  background-color: white;
+  color:black;
+}

@@ -1,0 +1,6 @@
+.dropdown-menu{
+  box-shadow: none;
+}
+.dropdown-item{
+  font-weight: lighter !important; /*força uma especificação*/
+}

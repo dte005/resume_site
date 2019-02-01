@@ -1,0 +1,25 @@
+.banner{
+  height: 50vh;
+  color: white;
+  margin:10px;
+  background: linear-gradient(135deg,rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 50%),
+              url("https://picsum.photos/1000/500?image=668");
+  background-size: cover;
+  text-align: center;
+  /*Propriedades de flexbox*/
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner h1{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.banner p{
+  font-size: 25px;
+  font-weight: lighter;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}

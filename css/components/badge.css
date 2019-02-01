@@ -1,0 +1,9 @@
+.badge{
+  background-color: blue;
+  border-radius: 50%;
+  width: 17px;
+  color: white;
+  position: relative;
+  top: -11px;
+  left: -15px;
+}
