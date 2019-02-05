@@ -2,71 +2,70 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Ownsite</title>
-    <!--owncss--->
+    <title>Ownresume</title>
+    <meta name="description" content="Presenting my resume">
+
     <link rel="stylesheet" href="css/style.css">
+
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-
-
   </head>
-  <body>
-    <section class="total-content">
-      <section class="sidebar-content">
-        <div class="item sidebar-item1">
-          <img src="http://placehold.it/50x50" class="avatar" width="100">
-          <h3 style="color:white;">Dashboard</h3>
+  <body style="background-color: rgb(240,240,240);">
+    <!--Banner do site-->
+    <div class="banner">
+      <div style="background-color:orange; border:1px solid orange; width: 1300px; height:500px; padding: 20px; margin:80px;">
+        <div class="row text-center">
+          <div class="col-lg-3 text-right">
+            <a href="#" style="font-size:30px; color:white; float:left; margin-left:30px;"><i class="far fa-compass"></i></a>
+            <p style="margin-right:50px; margin-bottom:0; opacity:1;">Rua Teodoro da Silva</p>
+            <p style="margin-right:50px; opacity:1;">Vila Isabel, RJ</p>
+          </div>
+          <div class="col-lg-3 text-right">
+            <a href="#"  style="font-size:30px; color:white; float:left; margin-left:30px;"><i class="fas fa-phone"></i></a>
+            <p style="margin-right:50px; margin-bottom:0; opacity:1;">+55(21)992603178</p>
+            <p style="margin-right:50px; margin-bottom:0; opacity:1;">Mon - Fry</p>
+          </div>
+          <div class="col-lg-3 text-right">
+            <a href="#" style="font-size:30px; color:white; float:left; margin-left:30px;"><i class="fas fa-at"></i></a>
+            <p style="margin-right:20px; margin-top:8px; opacity:1;">danieldts2013@gmail.com</p>
+          </div>
+          <div class="col-lg-3 text-right">
+            <a href="#" style="font-size:30px; color:white; float:left; margin-left:30px;"><i class="fab fa-linkedin"></i></a>
+            <p style="margin-right:30px; margin-top:8px; opacity:1;">linkedin.com/in/danieldts</p>
+          </div>
         </div>
-        <div class="item sidebar-item2">
-          <ul class="list-group">
-            <li class="list-group-item active">Opções</li>
-            <li class="list-group-item">Perfil</li>
-            <li class="list-group-item">Historico</li>
-            <li class="list-group-item">Cursos</li>
-            <li class="list-group-item">Aspirações</li>
-            <li class="list-group-item">Projetos</li>
-          </ul>
-        </div>
-        <div class="item sidebar-item3">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-github-square"></i></a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="content-content">
-        <div class="menu">
-          <form class="form-inline">
-            <div class="form-group mx-sm-3 mb-2">
-              <label class="sr-only">Search</label>
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-primary mb-2">Search</button>
-          </form>
+      </div>
+      <a href="#" class="btn btn-danger" style="position:relative; left:550px; bottom:30px; color:white;"><i class="fa fa-download" style="margin-right:10px;"></i>Download Resume</a>
+      <div style="background-color: rgb(240,240,240); border:1px solid rgb(240,240,240); width: 800px; height:1000px; position:relative; top:200px;">
+        <h1 style="position:relative; top:100px; ">Daniel Silva</h1>
+        <p style="position:relative; top:100px; color:black;" >Engenheiro de computação</p>
+        <p style="position:relative; top:90px; color:black;"><strong>Email: </strong>danieldts2013@gmail.com</p>
+      </div>
+      <img src="css/images/foto_dts.jpg" style="position:relative; bottom:120px;"alt="">
+    </div>
 
-          <ul class="list-inline navlist">
-            <li class="list-inline-item"><a href="#">Alertas</a></li>
-            <li class="list-inline-item"><a href="#">Mensagens</a></li>
-          </ul>
+    <div style="display:flex;justify-content: center; align-items: center; flex-flow: column; position:relative; top: 10px; height: 500px;">
+      <div>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Description</label>
+            <textarea name="name" class="form-control" rows="8" cols="80"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
 
-          <p class="navlist">Daniel Silva</p>
-
-          <img src="http://placehold.it/50x50" class="avatar" id="menu-img" width="100" height="50">
-        </div>
-        <div class="content">
-          <h3>Content</h3>
-        </div>
-        <div class="footer-content">
-          <p>Desenvovlido por @Daniel</p>
-        </div>
-      </section>
-    </section>
-
-
-
+    <div class="footer-content">
+        <p>danieldts2013@gmail.com</p>
+    </div>
     <!--jquery e javascript-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

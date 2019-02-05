@@ -1,25 +1,31 @@
 .banner{
-  height: 50vh;
+  height: 75vh;
   color: white;
-  margin:10px;
-  background: linear-gradient(135deg,rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 50%),
-              url("https://picsum.photos/1000/500?image=668");
+  margin:0;
+  background: linear-gradient(135deg,rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 60%),
+              url("https://picsum.photos/1000/500?image=60");
   background-size: cover;
   text-align: center;
   /*Propriedades de flexbox*/
   display:flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-flow: column;
 }
 
 .banner h1{
   font-size: 50px;
   font-weight: bolder;
+  color:orange;
 }
 
 .banner p{
-  font-size: 25px;
+  font-size: 18px;
   font-weight: lighter;
   opacity: 0.6;
   margin-bottom: 20px;
+}
+
+.banner img{
+  border-radius: 50%;
 }

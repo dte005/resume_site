@@ -2,22 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
 
 /*web components*/
-@import url('components/content.css');
-@import url('components/avatar.css');
 @import url('components/banner.css');
-@import url('components/button.css');
-@import url('components/dropdown.css');
 @import url('components/footer.css');
-@import url('components/card.css');
-@import url('components/badge.css');
-@import url('components/tabs.css');
-@import url('components/product.css');
-@import url('components/sidebar.css');
-@import url('components/fonte.css');
-@import url('components/form.css');
 /*Standard*/
 body{
   font-family: 'Raleway', sans-serif;
+  height: 100%;
+  background-color: grey;
 }
 
 h1,h2,h3{

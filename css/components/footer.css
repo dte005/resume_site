@@ -1,7 +1,9 @@
 .footer-content{
   height: 100px;
-  background: white;
+  background: grey;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
 }
