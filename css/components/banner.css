@@ -6,7 +6,7 @@
               url("https://picsum.photos/1000/500?image=60");
   background-size: cover;
   text-align: center;
-  
+
   /*Propriedades de flexbox*/
   display:flex;
   justify-content: center;
@@ -23,7 +23,6 @@
 .banner p{
   font-size: 18px;
   font-weight: lighter;
-  opacity: 0.6;
   margin-bottom: 20px;
 }
 

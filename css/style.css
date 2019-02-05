@@ -1,5 +1,6 @@
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC');
 
 /*web components*/
 @import url('components/banner.css');
@@ -10,7 +11,10 @@ body{
   height: 100%;
 
 }
+p{
+  font-family: 'Noto Serif SC', serif;
+}
 
-h1,h2,h3{
+h1,h2,h3,h4{
   font-family: 'Open Sans', sans-serif;
 }
