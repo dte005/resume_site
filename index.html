@@ -14,58 +14,83 @@
   </head>
   <body style="background-color: rgb(240,240,240);">
     <!--Banner do site-->
-    <div class="banner">
-      <div style="background-color:orange; border:1px solid orange; width: 1300px; height:500px; padding: 20px; margin:80px;">
-        <div class="row text-center">
-          <div class="col-lg-3 text-right">
+    <div class="container-fluid banner">
+      <div class="container" style="background-color:#FF8C00; border:1px solid orange; margin:80px;">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="col-lg-3" style="padding: 10px;">
             <a href="#" style="font-size:30px; color:white; float:left; margin-left:30px;"><i class="far fa-compass"></i></a>
-            <p style="margin-right:50px; margin-bottom:0; opacity:1;">Rua Teodoro da Silva</p>
-            <p style="margin-right:50px; opacity:1;">Vila Isabel, RJ</p>
+            <p style="margin-bottom:0; opacity:1; float:right;">Rua Teodoro da Silva</p>
+            <p style="margin-bottom:0; opacity:1; float:right;">Vila Isabel, RJ</p>
           </div>
-          <div class="col-lg-3 text-right">
-            <a href="#"  style="font-size:30px; color:white; float:left; margin-left:30px;"><i class="fas fa-phone"></i></a>
-            <p style="margin-right:50px; margin-bottom:0; opacity:1;">+55(21)992603178</p>
-            <p style="margin-right:50px; margin-bottom:0; opacity:1;">Mon - Fry</p>
+          <div class="col-lg-3" style="padding: 10px;">
+            <a href="#" style="font-size:30px; color:white; float:left; margin-left:50px;"><i class="fas fa-phone"></i></a>
+            <p style="margin-bottom:0; opacity:1; float:right;">+55(21)992603178</p>
+            <p style="margin-bottom:0; opacity:1; float:right;">Mon - Fry</p>
           </div>
-          <div class="col-lg-3 text-right">
-            <a href="#" style="font-size:30px; color:white; float:left; margin-left:30px;"><i class="fas fa-at"></i></a>
-            <p style="margin-right:20px; margin-top:8px; opacity:1;">danieldts2013@gmail.com</p>
+          <div class="col-lg-3" style="padding: 10px;">
+            <a href="#" style="font-size:30px; color:white; float:left; margin-left:15px;"><i class="fas fa-at"></i></a>
+            <p style="opacity:1; margin-top:10px; float:right;">danieldts2013@gmail.com</p>
           </div>
-          <div class="col-lg-3 text-right">
-            <a href="#" style="font-size:30px; color:white; float:left; margin-left:30px;"><i class="fab fa-linkedin"></i></a>
-            <p style="margin-right:30px; margin-top:8px; opacity:1;">linkedin.com/in/danieldts</p>
+          <div class="col-lg-3" style="padding: 10px;">
+            <a href="#" style="font-size:30px; color:white; float:left;"><i class="fab fa-linkedin"></i></a>
+            <p style="margin-right:30px; margin-top:10px; opacity:1; float:right;">linkedin.com/in/danieldts</p>
           </div>
         </div>
       </div>
-      <a href="#" class="btn btn-danger" style="position:relative; left:550px; bottom:30px; color:white;"><i class="fa fa-download" style="margin-right:10px;"></i>Download Resume</a>
-      <div style="background-color: rgb(240,240,240); border:1px solid rgb(240,240,240); width: 800px; height:1000px; position:relative; top:200px;">
-        <h1 style="position:relative; top:100px; ">Daniel Silva</h1>
-        <p style="position:relative; top:100px; color:black;" >Engenheiro de computação</p>
-        <p style="position:relative; top:90px; color:black;"><strong>Email: </strong>danieldts2013@gmail.com</p>
+      <div>
+        <a href="#" class="btn btn-danger" style="position:relative; left:480px; color:white; background-color:#FF8C00; border:1px solid #FF8C00;"><i class="fa fa-download" style="margin-right:10px;"></i>Download Resume</a>
       </div>
-      <img src="css/images/foto_dts.jpg" style="position:relative; bottom:120px;"alt="">
+      <div class="container" style="width:850px; background-color: rgb(240,240,240); border:1px solid rgb(240,240,240); position: relative; top:150px; display:flex; align-items:center; justify-content: center; flex-flow:column;">
+        <img src="css/images/foto_dts.jpg" style="position:relative; bottom:100px;">
+        <h1 style="position:relative; bottom:100px; color:black;">Daniel Silva</h1>
+        <p style="color:orange; position:relative; font-family: helvetica; font-size: 30px; bottom:100px;"><strong>Engenheiro de computação</strong></p>
+        <p style="color:black; position:relative; bottom:100px;"><i class="fas fa-at"></i> danieldts2013@gmail.com</p>
+        <a href="https://github.com/dte005" target="_blank" style="text-decoration:none; position:relative; bottom:100px;"><p><i class="fab fa-github"></i> github.com/dte005</p></a>
+      </div>
     </div>
 
-    <div style="display:flex;justify-content: center; align-items: center; flex-flow: column; position:relative; top: 10px; height: 500px;">
-      <div>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Description</label>
-            <textarea name="name" class="form-control" rows="8" cols="80"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+
+    <div class="container text-left" style="margin-top:150px; width:700px; padding:50px; border: 1px solid lightgrey; box-shadow: 10px 10px #DCDCDC;">
+      <div class="col-lg-auto text-left">
+        <h2><strong style="color:#FF8C00;">**</strong>About me</h2>
+        <hr>
+        <p>Experienced professional with a demonstrated history of working in the industrial engineering.</p>
+        <p>Skilled in Programming languages, PLC programming, Engineering, Supervisory development Skills.</p>
+        <p>Computer engineering professional graduated at Universidade Veiga de Almeida.</p>
       </div>
     </div>
+
+    <div class="container text-left" style="margin-top:100px; margin-bottom:100px; padding:50px; width:700px; border: 1px solid lightgrey; box-shadow: 10px 10px #DCDCDC;">
+      <h2><strong style="color:#FF8C00;">*</strong>Skills</h2>
+      <hr>
+      <p class="text-left" style="color:#FF8C00; margin:20px;">Python</p>
+      <div class="progress" style="background-color:rgb(240,240,240); margin:20px;">
+        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <p class="text-left" style="color:#FF8C00; margin:20px;">Bootstrap</p>
+      <div class="progress" style="background-color:rgb(240,240,240); margin:20px;">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <p class="text-left" style="color:#FF8C00; margin:20px;">HTML 5</p>
+      <div class="progress" style="background-color:rgb(240,240,240); margin:20px;">
+        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <p class="text-left" style="color:#FF8C00; margin:20px;">CSS</p>
+      <div class="progress" style="background-color:rgb(240,240,240); margin:20px;">
+        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <p class="text-left" style="color:#FF8C00; margin:20px;">Django</p>
+      <div class="progress" style="background-color:rgb(240,240,240); margin:20px;">
+        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+
 
     <div class="footer-content">
-        <p>danieldts2013@gmail.com</p>
+      <p>danieldts2013@gmail.com</p>
     </div>
+
+
     <!--jquery e javascript-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
