@@ -19,54 +19,75 @@
     TODO:Criar CSS separados para as tags
     -->
     <!--Banner do site-->
-    <div class="container-fluid banner">
-      <!--Menu informativo-->
-      <div class="container" style="background-color:#FF8C00; border:1px solid orange; margin:80px;">
-        <div class="d-flex flex-wrap justify-content-between">
+    <div class="d-flex flex-column flex-wrap align-items-center justify-content-between banner-content">
 
-          <div class="d-flex justify-content-around" style="padding: 10px;">
-            <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="far fa-compass"></i></a>
-            <div class="text-right" style="margin:8px;">
-              <p style="margin-bottom:0;">Rua Teodoro da Silva</p>
-              <p style="margin-bottom:0;">Vila Isabel, RJ</p>
+      <!--menu informativo-->
+      <div class="d-flex flex-column flex-wrap align-items-center" style="margin:80px; width:100%; height:25%;">
+        <div class="d-flex flex-column flex-wrap justify-content-between" style="width:50%; height:100%;">
+          <div class="d-flex flex-row flex-wrap my-container" style="background-color:#FF8C00;">
+            <!--Primeiro item-->
+            <div class="d-flex justify-content-around" style="padding: 10px;">
+              <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="far fa-compass"></i></a>
+              <div class="text-right" style="margin:8px;">
+                <p style="margin-bottom:0;">Rua Teodoro da Silva</p>
+                <p style="margin-bottom:0;">Vila Isabel, RJ</p>
+              </div>
             </div>
+            <!--Fim primeiro item-->
+
+            <!--segundo item-->
+            <div class="d-flex justify-content-around" style="padding: 10px;">
+              <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="fas fa-phone"></i></a>
+              <div class="text-right" style="margin:8px;">
+                <p style="margin-bottom:0;">+55(21)992603178</p>
+                <p style="margin-bottom:0;">Mon - Fry</p>
+              </div>
+            </div>
+            <!--fim segundo item-->
+
+            <!--tereceiro item-->
+            <div class="d-flex justify-content-around align-items-center" style="padding: 10px;">
+              <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="fas fa-at"></i></a>
+              <div class="text-right" style="margin:8px;">
+                <a style="text-decoration:none; color:white;" target="_blank"  href="mailto: danieldts2013@gmail.com"><p style="margin-bottom:0;">danieldts2013@gmail.com</p></a>
+              </div>
+            </div>
+            <!--fim do terceiro item-->
+
+            <!--Quarto item-->
+            <div class="d-flex justify-content-around align-items-center" style="padding: 10px;">
+              <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="fab fa-linkedin"></i></a>
+              <div class="text-right" style="margin:8px; margin-bottom:8px;">
+                <a style="text-decoration:none; color:white;" target="_blank"  href="#"><p style="margin-bottom:0;">danieldts</p></a>
+              </div>
+            </div>
+            <!--fim do auarto item-->
+
           </div>
 
-          <div class="d-flex justify-content-around" style="padding: 10px;">
-            <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="fas fa-phone"></i></a>
-            <div class="text-right" style="margin:8px;">
-              <p style="margin-bottom:0;">+55(21)992603178</p>
-              <p style="margin-bottom:0;">Mon - Fry</p>
-            </div>
+
+          <div class="align-self-sd-start align-self-md-end align-self-lg-end">
+            <a href="css/images/curriculum_ingles_informatica_2019_nova_formatacao.pdf"
+            target="_blank"
+            class="btn btn-danger"
+            style="color:white; background-color:#FF8C00; border:1px solid #FF8C00;">
+            <i class="fa fa-download" style="margin-right:10px;"></i>Download Resume</a>
           </div>
-
-          <div class="d-flex justify-content-around align-items-center" style="padding: 10px;">
-            <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="fas fa-at"></i></a>
-            <div class="text-right" style="margin:8px;">
-              <a style="text-decoration:none; color:white;" target="_blank"  href="mailto: danieldts2013@gmail.com"><p style="margin-bottom:0;">danieldts2013@gmail.com</p></a>
-            </div>
-          </div>
-
-          <div class="d-flex justify-content-around align-items-center" style="padding: 10px;">
-            <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="fab fa-linkedin"></i></a>
-            <div class="text-right" style="margin:8px; margin-bottom:8px;">
-              <a style="text-decoration:none; color:white;" target="_blank"  href="#"><p style="margin-bottom:0;">danieldts</p></a>
-            </div>
-
-          </div>
-
         </div>
       </div>
-      <div>
-        <a href="css/images/curriculum_ingles_informatica_2019_nova_formatacao.pdf" target="_blank" class="btn btn-danger" style="position:relative; left:480px; color:white; background-color:#FF8C00; border:1px solid #FF8C00;"><i class="fa fa-download" style="margin-right:10px;"></i>Download Resume</a>
+      <!--border:1px solid rgb(240,240,240)-->
+      <div class="d-flex flex-column flex-wrap align-items-center" style="width:100%; height:40%;">
+        <div class="d-flex flex-column flex-wrap my-container" style="width:35%; height:400px;; border:1px solid rgb(240,240,240); background-color: rgb(240,240,240); position:absolute;">
+          <div class="my-container text-center" style="position:relative; bottom:100px;">
+            <img src="css/images/foto_dts.jpg">
+            <h1 style="color:black;">Daniel Silva</h1>
+            <p style="color:orange; font-family: helvetica; font-size: 30px;"><strong>Engenheiro de computação</strong></p>
+            <p style="color:black;"><i class="fas fa-at"></i> danieldts2013@gmail.com</p>
+            <a href="https://github.com/dte005" target="_blank" style="text-decoration:none;"><p><i class="fab fa-github"></i> github.com/dte005</p></a>
+          </div>
+        </div>
       </div>
-      <div class="container" style="width:850px; background-color: rgb(240,240,240); border:1px solid rgb(240,240,240); position: relative; top:150px; display:flex; align-items:center; justify-content: center; flex-flow:column;">
-        <img src="css/images/foto_dts.jpg" style="position:relative; bottom:100px;">
-        <h1 style="position:relative; bottom:100px; color:black;">Daniel Silva</h1>
-        <p style="color:orange; position:relative; font-family: helvetica; font-size: 30px; bottom:100px;"><strong>Engenheiro de computação</strong></p>
-        <p style="color:black; position:relative; bottom:100px;"><i class="fas fa-at"></i> danieldts2013@gmail.com</p>
-        <a href="https://github.com/dte005" target="_blank" style="text-decoration:none; position:relative; bottom:100px;"><p><i class="fab fa-github"></i> github.com/dte005</p></a>
-      </div>
+
     </div>
 
 
