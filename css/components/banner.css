@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  flex-wrap: wrap;
 }
 
 .banner h1{
@@ -28,4 +29,21 @@
 
 .banner img{
   border-radius: 50%;
+}
+
+.banner-content{
+  height: 75vh;
+  color: white;
+  margin:0;
+  background: linear-gradient(135deg,rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 60%),
+              url("https://picsum.photos/1000/500?image=60");
+  background-size: cover;
+}
+
+.my-container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
