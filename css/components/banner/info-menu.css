@@ -1,12 +1,14 @@
 #my-menu{
-  margin:80px;
+  margin-top: 80px;
   width:100%;
   height:25%;
+  border: 1px solid red;
 }
 
 #my-menu-container{
   width:50%;
   height:100%;
+  border: 1px solid green;
 }
 
 #my-menu-content{
