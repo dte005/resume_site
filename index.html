@@ -15,51 +15,51 @@
   <body style="background-color: rgb(240,240,240);">
     <!--
     TODO:Uma pagina onde se encontra as fotos dos workshops
-    TODO:Uma forma de fazer o container do menu informativo ficar responsivo
-    TODO:Criar CSS separados para as tags
+    TODO:Uma forma de fazer o container do menu informativo ficar responsivo (falta para small devices)
+    TODO:Aumentar width do container pessoal para ficar maior que o content do site
     -->
     <!--Banner do site-->
     <div class="d-flex flex-column flex-wrap align-items-center justify-content-between banner-content">
 
       <!--menu informativo-->
-      <div class="d-flex flex-column flex-wrap align-items-center" style="margin:80px; width:100%; height:25%;">
-        <div class="d-flex flex-column flex-wrap justify-content-between" style="width:50%; height:100%;">
-          <div class="d-flex flex-row flex-wrap my-container" style="background-color:#FF8C00;">
+      <div class="d-flex flex-column flex-wrap align-items-center" id="my-menu">
+        <div class="d-flex flex-column flex-wrap justify-content-between" id="my-menu-container">
+          <div class="d-flex flex-row flex-wrap my-container" id="my-menu-content">
 
             <!--Primeiro item-->
-            <div class="d-flex justify-content-around" style="padding: 10px;">
-              <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="far fa-compass"></i></a>
-              <div class="text-right" style="margin:8px;">
-                <p style="margin-bottom:0;">Rua Teodoro da Silva</p>
-                <p style="margin-bottom:0;">Vila Isabel, RJ</p>
+            <div class="d-flex justify-content-around my-menu-item">
+              <a href="#" class="my-menu-item-a"><i class="far fa-compass"></i></a>
+              <div class="text-right my-menu-item-div">
+                <p>Rua Teodoro da Silva</p>
+                <p>Vila Isabel, RJ</p>
               </div>
             </div>
             <!--Fim primeiro item-->
 
             <!--segundo item-->
-            <div class="d-flex justify-content-around" style="padding: 10px;">
-              <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="fas fa-phone"></i></a>
-              <div class="text-right" style="margin:8px;">
-                <p style="margin-bottom:0;">+55(21)992603178</p>
-                <p style="margin-bottom:0;">Mon - Fry</p>
+            <div class="d-flex justify-content-around my-menu-item">
+              <a href="#" class="my-menu-item-a"><i class="fas fa-phone"></i></a>
+              <div class="text-right my-menu-item-div">
+                <p>+55(21)992603178</p>
+                <p>Mon - Fry</p>
               </div>
             </div>
             <!--fim segundo item-->
 
             <!--tereceiro item-->
-            <div class="d-flex justify-content-around align-items-center" style="padding: 10px;">
-              <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="fas fa-at"></i></a>
-              <div class="text-right" style="margin:8px;">
-                <a style="text-decoration:none; color:white;" target="_blank"  href="mailto: danieldts2013@gmail.com"><p style="margin-bottom:0;">danieldts2013@gmail.com</p></a>
+            <div class="d-flex justify-content-around align-items-center my-menu-item">
+              <a href="#" class="my-menu-item-a"><i class="fas fa-at"></i></a>
+              <div class="text-right my-menu-item-div">
+                <a target="_blank"  href="mailto: danieldts2013@gmail.com"><p style="margin-bottom:0;">danieldts2013@gmail.com</p></a>
               </div>
             </div>
             <!--fim do terceiro item-->
 
             <!--Quarto item-->
-            <div class="d-flex justify-content-around align-items-center" style="padding: 10px;">
-              <a href="#" style="font-size:30px; color:white; margin:8px;"><i class="fab fa-linkedin"></i></a>
-              <div class="text-right" style="margin:8px; margin-bottom:8px;">
-                <a style="text-decoration:none; color:white;" target="_blank"  href="#"><p style="margin-bottom:0;">danieldts</p></a>
+            <div class="d-flex justify-content-around align-items-center my-menu-item">
+              <a href="#" class="my-menu-item-a"><i class="fab fa-linkedin"></i></a>
+              <div class="text-right my-menu-item-div">
+                <a target="_blank"  href="#"><p>danieldts</p></a>
               </div>
             </div>
             <!--fim do auarto item-->
@@ -71,36 +71,38 @@
             <a href="css/images/curriculum_ingles_informatica_2019_nova_formatacao.pdf"
             target="_blank"
             class="btn btn-danger"
-            style="color:white; background-color:#FF8C00; border:1px solid #FF8C00;">
-            <i class="fa fa-download" style="margin-right:10px;"></i>Download Resume</a>
+            id="botao-resume">
+            <i class="fa fa-download" id="icon-resume"></i>Download Resume</a>
           </div>
           <!--fom do botao de resume-->
         </div>
       </div>
+
       <!--Content do container da foto-->
-      <div class="d-flex flex-column flex-wrap align-items-center" style="width:100%; height:40%;">
-        <div class="d-flex flex-column flex-wrap my-container" style="width:35%; height:400px;; border:1px solid rgb(240,240,240); background-color: rgb(240,240,240); position:absolute;">
-          <div class="my-container text-center" style="position:relative; bottom:100px;">
+      <div class="d-flex flex-column flex-wrap align-items-center" id="my-personal-data">
+        <div class="d-flex flex-column flex-wrap my-container" id="my-personal-data-container">
+          <div class="my-container text-center my-personal-data-item">
             <img src="css/images/foto_dts.jpg">
-            <h1 style="color:black;">Daniel Silva</h1>
-            <p style="color:orange; font-family: helvetica; font-size: 30px;"><strong>Computer Engineer</strong></p>
-            <p style="color:black;"><i class="fas fa-at"></i> danieldts2013@gmail.com</p>
-            <a href="https://github.com/dte005" target="_blank" style="text-decoration:none;"><p><i class="fab fa-github"></i> github.com/dte005</p></a>
+            <h1>Daniel Silva</h1>
+            <p id="personal-data-item-p1"><strong>Computer Engineer</strong></p>
+            <p id="personal-data-item-p2"><i class="fas fa-at"></i> danieldts2013@gmail.com</p>
+            <a href="https://github.com/dte005" target="_blank"><p><i class="fab fa-github"></i> github.com/dte005</p></a>
           </div>
         </div>
       </div>
 
     </div>
 
-
-    <div class="container text-left" style="margin-top:150px; width:700px; padding:50px; border: 1px solid lightgrey; box-shadow: 10px 10px #E8ECEC;">
+    <!--conteúdo do curriculum-->
+    <!--About me-->
+    <div class="container text-left" id="about-me">
       <div class="col-lg-auto text-left">
         <div class="row">
           <div class="col-lg-6">
-            <h2><strong style="color:#FF8C00;">*</strong>About me</h2>
+            <h2><strong><span id="about-me-span">*</span></strong>About me</h2>
           </div>
           <div class="col-lg-6 text-right">
-            <i class="fas fa-address-book" style="font-size:30px; color:grey;"></i>
+            <i class="fas fa-address-book" id="about-me-i"></i>
           </div>
         </div>
         <hr>
@@ -110,47 +112,52 @@
       </div>
     </div>
 
-    <div class="container text-left" style="margin-top:100px; margin-bottom:80px; padding:50px; width:700px; border: 1px solid lightgrey; box-shadow: 10px 10px #E8ECEC;">
+    <!--Skills-->
+    <!--TODO: colocar porcentagem nas barras
+        TODO: verificar se haverá uma identificação para cada progress bar, pois cada um tem sua porcentagem diferente
+    -->
+    <div class="container text-left" id="skills">
       <div class="row">
         <div class="col-lg-6">
-          <h2><strong style="color:#FF8C00;">*</strong>Skills</h2>
+          <h2><strong style=""><span id="skills-span">*</span></strong>Skills</h2>
         </div>
         <div class="col-lg-6 text-right">
-          <i class="fas fa-briefcase" style="font-size:30px; color:grey;"></i>
+          <i class="fas fa-briefcase" id="skills-i"></i>
         </div>
       </div>
       <hr>
-      <p class="text-left" style="color:#FF8C00; margin:20px;">Python</p>
-      <div class="progress" style="background-color:rgb(240,240,240); margin:20px;">
+      <p class="text-left">Python</p>
+      <div class="progress skills-progress">
         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
-      <p class="text-left" style="color:#FF8C00; margin:20px;">Bootstrap</p>
-      <div class="progress" style="background-color:rgb(240,240,240); margin:20px;">
+      <p class="text-left">Bootstrap</p>
+      <div class="progress skills-progress">
         <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
-      <p class="text-left" style="color:#FF8C00; margin:20px;">HTML 5</p>
-      <div class="progress" style="background-color:rgb(240,240,240); margin:20px;">
+      <p class="text-left">HTML 5</p>
+      <div class="progress skills-progress">
         <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
-      <p class="text-left" style="color:#FF8C00; margin:20px;">CSS</p>
-      <div class="progress" style="background-color:rgb(240,240,240); margin:20px;">
+      <p class="text-left">CSS</p>
+      <div class="progress skills-progress">
         <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
-      <p class="text-left" style="color:#FF8C00; margin:20px;">Django</p>
-      <div class="progress" style="background-color:rgb(240,240,240); margin:20px;">
+      <p class="text-left">Django</p>
+      <div class="progress skills-progress">
         <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 55%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
     </div>
 
-    <!--TODO: change all content to english-->
-    <div class="container text-left" style="margin-top:150px; margin-bottom:80px; width:700px; padding:50px; border: 1px solid lightgrey; box-shadow: 10px 10px #E8ECEC;">
+    <!--Portfolio-->
+    <!---->
+    <div class="container text-left" id="portfolio">
       <div class="col-lg-auto text-left">
         <div class="row">
           <div class="col-lg-6">
-            <h2><strong style="color:#FF8C00;">*</strong>Portfolio</h2>
+            <h2><strong><span id="portfolio-span">*</span></strong>Portfolio</h2>
           </div>
           <div class="col-lg-6 text-right">
-            <i class="fas fa-book" style="font-size:30px; color:grey;"></i>
+            <i class="fas fa-book" id="portfolio-i"></i>
           </div>
         </div>
         <hr>
@@ -209,12 +216,12 @@
 
 
     <div class="footer-content">
-      <a href="mailto: danieldts2013@gmail.com" target="_blank" style="text-decoration:none; color:white;"><p>Contact me</p></a>
+      <a href="mailto: danieldts2013@gmail.com" target="_blank"><p>Contact me</p></a>
       <p>Desenvolvido por @Daniel</p>
       <ul class="list-inline">
-          <li class="list-inline-item"><a href="https://www.facebook.com/dtesilva" style="color:white; font-size:30px;" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-          <li class="list-inline-item"><a href="https://twitter.com/danieldts010614" style="color:white; font-size:30px;" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-          <li class="list-inline-item"><a href="https://github.com/dte005" style="color:white; font-size:30px;" target="_blank"><i class="fab fa-github-square"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.facebook.com/dtesilva" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="list-inline-item"><a href="https://twitter.com/danieldts010614" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+          <li class="list-inline-item"><a href="https://github.com/dte005" target="_blank"><i class="fab fa-github-square"></i></a></li>
       </ul>
     </div>
 

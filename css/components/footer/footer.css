@@ -6,3 +6,12 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+.footer-content a{
+  text-decoration:none; color:white;
+}
+
+.footer-content ul li{
+  color:white;
+  font-size:30px;
+}

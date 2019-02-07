@@ -1,0 +1,27 @@
+#skills{
+  margin-top:100px;
+  margin-bottom:80px;
+  padding:50px;
+  width:700px;
+  border: 1px solid lightgrey;
+  box-shadow: 10px 10px #E8ECEC;
+}
+
+#skills p{
+  color:#FF8C00;
+  margin:20px;
+}
+
+#skills-span{
+  color:#FF8C00;
+}
+
+#skills-i{
+  font-size:30px;
+  color:grey;
+}
+
+.skills-progress{
+  background-color:rgb(240,240,240);
+  margin:20px;
+}
