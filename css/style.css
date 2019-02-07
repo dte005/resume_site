@@ -3,9 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC');
 
 /*web components*/
-@import url('components/banner.css');
-@import url('components/footer.css');
-@import url('components/info-menu.css');
+@import url('components/banner/banner.css');
+@import url('components/content/about-me.css');
+@import url('components/footer/footer.css');
+
 /*Standard*/
 body{
   font-family: 'Raleway', sans-serif;
