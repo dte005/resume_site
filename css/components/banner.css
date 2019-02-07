@@ -1,4 +1,4 @@
-.banner{
+/*.banner{
   height: 75vh;
   color: white;
   margin:0;
@@ -7,7 +7,7 @@
   background-size: cover;
   text-align: center;
 
-  /*Propriedades de flexbox*/
+  /*Propriedades de flexbox
   display:flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@
 
 .banner img{
   border-radius: 50%;
-}
+}*/
 
 .banner-content{
   height: 75vh;

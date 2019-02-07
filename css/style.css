@@ -5,6 +5,7 @@
 /*web components*/
 @import url('components/banner.css');
 @import url('components/footer.css');
+@import url('components/info-menu.css');
 /*Standard*/
 body{
   font-family: 'Raleway', sans-serif;
