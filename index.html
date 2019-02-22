@@ -2,180 +2,148 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Ownresume</title>
-    <meta name="description" content="Presenting my resume">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Ownsite</title>
 
-    <!--bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body style="background-color: rgb(240,240,240);">
-    <!--
-    TODO:Uma pagina onde se encontra as fotos dos workshops
-    -->
-    <!--Banner do site-->
-    <div class="d-flex flex-column flex-wrap align-items-center justify-content-between banner-content">
+  <body>
+    <div id="grid">
 
-      <!--menu informativo-->
-      <div class="d-flex flex-column align-items-center justify-content-center" id="my-menu">
-        <div class="d-flex flex-column flex-wrap align-items-center justify-content-between" id="my-menu-container">
-          <div class="d-flex flex-row flex-wrap align-items-center justify-content-center my-container" id="my-menu-content">
-
-            <!--Primeiro item-->
-            <!--
-              TODO:Colocar um link no endereço de casa para o google MAPS
-            -->
-            <div class="d-flex justify-content-around my-menu-item">
-              <a href="#" class="my-menu-item-a"><i class="far fa-compass"></i></a>
-              <div class="text-right my-menu-item-div">
-                <p>Rua Teodoro da Silva</p>
-                <p>Vila Isabel, RJ</p>
-              </div>
-            </div>
-            <!--Fim primeiro item-->
-
-            <!--segundo item-->
-            <div class="d-flex justify-content-around my-menu-item">
-              <a href="#" class="my-menu-item-a"><i class="fas fa-phone"></i></a>
-              <div class="text-right my-menu-item-div">
-                <p>+55(21)992603178</p>
-                <p>Mon - Fry</p>
-              </div>
-            </div>
-            <!--fim segundo item-->
-
-            <!--tereceiro item-->
-            <div class="d-flex justify-content-around align-items-center my-menu-item">
-              <a href="#" class="my-menu-item-a"><i class="fas fa-at"></i></a>
-              <div class="text-right my-menu-item-div">
-                <a target="_blank"  href="mailto: danieldts2013@gmail.com"><p style="margin-bottom:0;">danieldts2013@gmail.com</p></a>
-              </div>
-            </div>
-            <!--fim do terceiro item-->
-
-            <!--Quarto item-->
-            <div class="d-flex justify-content-around align-items-center my-menu-item">
-              <a href="#" class="my-menu-item-a"><i class="fab fa-linkedin"></i></a>
-              <div class="text-right my-menu-item-div">
-                <a target="_blank"  href="#"><p>danieldts</p></a>
-              </div>
-            </div>
-            <!--fim do auarto item-->
-
+      <div class="nav">
+        <!--primeiro elemento-->
+        <div class="nav-item">
+          <a href="#" id="nav-item-a"><i class="far fa-compass"></i></a>
+          <div class="nav-item-content">
+            <p>Rua Teodoro da Silva</p>
+            <p>Vila Isabel, RJ</p>
           </div>
+        </div>
+        <!--segundo elemento-->
+        <div class="nav-item">
+          <a href="#" id="nav-item-a"><i class="fas fa-phone"></i></a>
+          <div class="nav-item-content">
+            <p>+55(21)992603178</p>
+            <p>Mon - Fry</p>
+          </div>
+        </div>
+        <!--terceiro elemento-->
+        <div class="nav-item">
+          <a href="mailto: danieldts2013@gmail.com" id="nav-item-a"><i class="fas fa-at"></i></a>
+          <div class="nav-item-content">
+            <a target="_blank"  href="mailto: danieldts2013@gmail.com"><p>danieldts2013@gmail.com</p></a>
+          </div>
+        </div>
+        <!--quarto elemento-->
+        <div class="nav-item">
+          <a href="#" id="nav-item-a"><i class="fab fa-linkedin"></i></a>
+          <div class="nav-item-content">
+            <a target="_blank"  href="#"><p>danieldts</p></a>
+          </div>
+        </div>
 
-          <!--Botao de resume-->
-          <div class="align-self-sd-start align-self-md-end align-self-lg-end">
+        <div>
             <a href="css/images/curriculum_ingles_informatica_2019_nova_formatacao.pdf"
             target="_blank"
-            class="btn btn-danger"
-            id="botao-resume">
-            <i class="fa fa-download" id="icon-resume"></i>Download Resume</a>
-          </div>
-          <!--fom do botao de resume-->
+            id="nav-item-a">
+            <i class="fa fa-download"></i></a>
         </div>
       </div>
 
-      <!--Content do container da foto-->
-      <!--
-        TODO:Aumentar width do container pessoal para ficar maior que o content do site
-        TODO:Uma forma de fazer o container do menu informativo ficar responsivo (falta para small devices)
-      -->
-      <div class="d-flex flex-column align-items-center" id="my-personal-data">
-        <div class="d-flex flex-column flex-wrap align-items-center  my-container" id="my-personal-data-container">
-          <div class="my-container text-center my-personal-data-item">
+      <div class="banner">
+        <div class="banner-box">
+          <div class="banner-box-content">
             <img src="css/images/foto_dts.jpg">
             <h1>Daniel Silva</h1>
-            <p id="personal-data-item-p1"><strong>Computer Engineer</strong></p>
-            <p id="personal-data-item-p2"><i class="fas fa-at"></i> danieldts2013@gmail.com</p>
-            <a href="https://github.com/dte005" target="_blank"><p><i class="fab fa-github"></i> github.com/dte005</p></a>
+            <p id="banner-box-content-p1"><strong>Computer Engineer</strong></p>
+            <p id="banner-box-content-p2"><i class="fas fa-at"></i> danieldts2013@gmail.com</p>
+            <a href="https://github.com/dte005" target="_blank"><p id="banner-box-content-p3"><i class="fab fa-github"></i> github.com/dte005</p></a>
           </div>
         </div>
       </div>
 
-    </div>
-
-    <!--conteúdo do curriculum-->
-    <!--About me-->
-    <div class="container text-left" id="about-me">
-      <div class="col-lg-auto text-left">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2><strong><span id="about-me-span">*</span></strong>About me</h2>
-          </div>
-          <div class="col-lg-6 text-right">
-            <i class="fas fa-address-book" id="about-me-i"></i>
+      <div class="content-present">
+        <!--About me-->
+        <div class="content-present-box about-me">
+            <div class="content-present-box-title">
+              <div class="content-present-box-text">
+                <h1> * </h1><h2>About me</h2>
+              </div>
+              <div>
+                <i class="fas fa-address-book" id="about-me-i"></i>
+              </div>
+            </div>
+            <hr>
+            <div class="about-me-p">
+            <p>Experienced professional with a demonstrated history of working in the industrial engineering.</p>
+            <p>Skilled in Programming languages, PLC programming, Engineering, Supervisory development Skills.</p>
+            <p>Computer engineering professional graduated at Universidade Veiga de Almeida.</p>
           </div>
         </div>
-        <hr>
-        <p>Experienced professional with a demonstrated history of working in the industrial engineering.</p>
-        <p>Skilled in Programming languages, PLC programming, Engineering, Supervisory development Skills.</p>
-        <p>Computer engineering professional graduated at Universidade Veiga de Almeida.</p>
-      </div>
-    </div>
+        <!--fim do about me-->
 
-    <!--Skills-->
-    <!--TODO: colocar porcentagem nas barras
-        TODO: verificar se haverá uma identificação para cada progress bar, pois cada um tem sua porcentagem diferente
-    -->
-    <div class="container text-left" id="skills">
-      <div class="row">
-        <div class="col-lg-6">
-          <h2><strong style=""><span id="skills-span">*</span></strong>Skills</h2>
-        </div>
-        <div class="col-lg-6 text-right">
-          <i class="fas fa-briefcase" id="skills-i"></i>
-        </div>
-      </div>
-      <hr>
-      <p class="text-left">Python</p>
-      <div class="progress skills-progress">
-        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <p class="text-left">Bootstrap</p>
-      <div class="progress skills-progress">
-        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <p class="text-left">HTML 5</p>
-      <div class="progress skills-progress">
-        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <p class="text-left">CSS</p>
-      <div class="progress skills-progress">
-        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <p class="text-left">Django</p>
-      <div class="progress skills-progress">
-        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 55%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-    </div>
-
-    <!--Portfolio-->
-    <!---->
-    <div class="container text-left" id="portfolio">
-      <div class="col-lg-auto text-left">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2><strong><span id="portfolio-span">*</span></strong>Portfolio</h2>
+        <!--inicio skills-->
+        <div class="content-present-box skills">
+          <div class="content-present-box-title">
+            <div class="content-present-box-text">
+              <h1> * </h1><h2>Skills</h2>
+            </div>
+            <div>
+              <i class="fas fa-briefcase" id="skills-i"></i>
+            </div>
           </div>
-          <div class="col-lg-6 text-right">
+          <hr>
+          <!--Progress-->
+          <br>
+          <p>Python</p>
+          <div class="w3-white">
+            <div class="w3-container w3-green w3-center" style="width:40%">40%</div>
+          </div><br>
+
+          <p>Bootstrap</p>
+          <div class="w3-white">
+            <div class="w3-container w3-red w3-center" style="width:30%">30%</div>
+          </div><br>
+
+          <p>HTML 5</p>
+          <div class="w3-white">
+            <div class="w3-container w3-blue w3-center" style="width:50%">50%</div>
+          </div><br>
+
+          <p>CSS</p>
+          <div class="w3-white">
+            <div class="w3-container w3-yellow w3-center" style="width:30%">30%</div>
+          </div><br>
+
+          <p>Django</p>
+          <div class="w3-white">
+            <div class="w3-container w3-orange w3-center" style="width:55%">55%</div>
+          </div><br>
+          <!--fim do progress-->
+      </div>
+      <!--fim do skills-->
+      <div class="content-present-box skills">
+        <div class="content-present-box-title">
+          <div class="content-present-box-text">
+            <h1> * </h1><h2>Portfolio</h2>
+          </div>
+          <div>
             <i class="fas fa-book" id="portfolio-i"></i>
           </div>
         </div>
         <hr>
-        <div>
+        <div class="portfolio-content-1">
           <h4>Integrated Corporate Support Platform <strong>(ICSP)</strong><h4>
-            <br>
             <h5> <strong>Objective: </strong></h5>
-
+            <br>
             <p>The main objective of the project was to develop a platform where services witch has a industrial scope
             could be managed through the creation and planning of services orders</p>
             <p>The main goal would be to provide a platform where employees could have a interaction between departments,
             with the objective of exchanging information about the order that has been created</p>
-
+            <br>
             <p> <strong>Major Technologies: </strong> </p>
+            <br>
             <p>For this project it has been used the following technologies: </p>
             <ul>
               <li>Python Language</li>
@@ -185,21 +153,20 @@
               <li>Atom IDE</li>
               <li>HTML 5</li>
             </ul>
-
             <p>All the project has been design on function based views <em>(FBV)</em> </p>
             <p>It has all configurations for <strong>Heroku</strong> deploy system </p>
         </div>
         <br>
         <hr>
-        <div>
+        <div class="portfolio-content-1">
           <h4>Final project on python using django for Udemy<h4>
-            <br>
             <h5> <strong>Objective: </strong></h5>
-
+            <br>
             <p>The main objective was to provide an application witch has services such as create, read, edit and delete (CRUD)
             on costumers contact.</p>
-
+            <br>
             <p> <strong>Major Technologies: </strong> </p>
+            <br>
             <p>For this project it has been used the following technologies: </p>
             <ul>
               <li>Python Language</li>
@@ -209,30 +176,24 @@
               <li>Atom IDE</li>
               <li>HTML 5</li>
             </ul>
-
             <p>All the project has been design on function based views <em>(FBV)</em> </p>
             <p>It has all configurations for <strong>Heroku</strong> deploy system </p>
         </div>
         <br>
       </div>
+    </div>
+
+      <div class="footer">
+        <a href="mailto: danieldts2013@gmail.com" target="_blank"><p>Contact me</p></a>
+        <p>Desenvolvido por @Daniel</p>
+        <ul>
+            <li><a href="https://www.facebook.com/dtesilva" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://twitter.com/danieldts010614" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="https://github.com/dte005" target="_blank"><i class="fab fa-github-square"></i></a></li>
+        </ul>
+      </div>
 
     </div>
 
-
-    <div class="footer-content">
-      <a href="mailto: danieldts2013@gmail.com" target="_blank"><p>Contact me</p></a>
-      <p>Desenvolvido por @Daniel</p>
-      <ul class="list-inline">
-          <li class="list-inline-item"><a href="https://www.facebook.com/dtesilva" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-          <li class="list-inline-item"><a href="https://twitter.com/danieldts010614" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-          <li class="list-inline-item"><a href="https://github.com/dte005" target="_blank"><i class="fab fa-github-square"></i></a></li>
-      </ul>
-    </div>
-
-
-    <!--jquery e javascript-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>
