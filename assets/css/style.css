@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/*font-family: 'Roboto Slab', serif;
+font-family: 'Montserrat', sans-serif;*/
+@import url('banner.css');
+@import url('navegacao.css');
+@import url('content.css');
+@import url('footer.css');
+
+*{
+  margin: 0;
+  padding:0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(240,240,240);
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Playfair Display', serif;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+@media screen and (max-width:984px){
+  .nav{display: flex; justify-content: flex-start;}
+  .nav-item .nav-item-content{display: none}
+  #nav-item-a{font-size: 30px; color: white; margin-left:20px;}
+  .footer{display: flex; justify-content: center; align-items: center;}
+  .footer a{margin-right: 20px;}
+  .footer ul{margin-left: 20px;}
+}
