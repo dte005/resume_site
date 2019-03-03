@@ -1,0 +1,19 @@
+.footer{
+  grid-area: footer;
+  background: grey;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer a{
+  text-decoration:none; color:white;
+}
+
+.footer ul li{
+  display: inline;
+  color:white;
+  font-size:30px;
+}

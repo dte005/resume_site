@@ -1,0 +1,101 @@
+/*conteúdo do site*/
+.content-present{
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(240,240,240);
+
+}
+
+.content-present-box{
+  width:600px;
+  padding:50px;
+  border: 1px solid lightgrey;
+  box-shadow: 10px 10px #E8ECEC;
+}
+
+.content-present-box-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-me{
+  margin-top:200px;
+}
+
+.about-me-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-present-box-title i{
+  color:gray;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.content-present-box-text{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: flex-start;
+}
+
+.content-present-box-title h1{
+  color:orange;
+  font-size: 60px;
+  margin-right: 10px;
+  margin-bottom: -15px;
+}
+
+.content-present-box-title h2{
+  color: black;
+  font-size: 30px;
+}
+
+.about-me-p{
+  margin-top: 20px;
+}
+
+.about-me-p p{
+  margin-top: 10px;
+}
+
+.skills{
+  margin-top:100px;
+}
+
+.content-present-box-text{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: flex-start;
+}
+
+.portfolio-content-1{
+  margin-top: 20px;
+}
+
+.portfolio-content-1 h4{
+  font-size:25px;
+}
+
+.portfolio-content-1 h5{
+  font-size:20px;
+  margin-bottom: 10px;
+}
+
+.portfolio-content-1 ul{
+  font-size:15px;
+  margin-left: 25px;
+}
+
+.portfolio-content-1 p{
+  font-size:15px;
+  line-height: 1.8;
+}
+
+/*fim conteúdo do site*/
