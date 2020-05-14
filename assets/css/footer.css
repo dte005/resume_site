@@ -11,15 +11,10 @@
 .footer a{
   text-decoration:none;
   color:white;
-  margin-left:10px;
 }
 
 .footer ul li{
   display: inline;
   color:white;
   font-size:30px;
-}
-
-.footer ul{
-  margin-right: 10px;
 }
