@@ -2,12 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
-/*font-family: 'Roboto Slab', serif;
-font-family: 'Montserrat', sans-serif;*/
-@import url('banner.css');
-@import url('navegacao.css');
-@import url('content.css');
-@import url('footer.css');
+@import url('sidebar.css');
+@import url('horizontal.css');
 
 *{
   margin: 0;
@@ -16,7 +12,7 @@ font-family: 'Montserrat', sans-serif;*/
 
 body{
   font-family: 'Montserrat', sans-serif;
-  background-color: rgb(240,240,240);
+  background-color: #F9F9F9;
 }
 
 p{
@@ -25,6 +21,18 @@ p{
 
 h1,h2,h3,h4{
   font-family: 'Playfair Display', serif;
+}
+
+.bColor{
+  border: 2px solid red
+}
+
+.vh{
+  height: 100vh;
+}
+
+.vw{
+  width: 100vw;
 }
 
 hr {
@@ -37,11 +45,3 @@ hr {
   border-width: 1px;
 }
 
-@media screen and (max-width:984px){
-  .nav{display: flex; justify-content: flex-start;}
-  .nav-item .nav-item-content{display: none}
-  #nav-item-a{font-size: 30px; color: white; margin-left:20px;}
-  .footer{display: flex; justify-content: center; align-items: center;}
-  .footer a{margin-right: 20px;}
-  .footer ul{margin-left: 20px;}
-}
