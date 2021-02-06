@@ -4,6 +4,7 @@
 
 @import url('sidebar.css');
 @import url('horizontal.css');
+@import url('content.css');
 
 *{
   margin: 0;
@@ -11,7 +12,7 @@
 }
 
 body{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #F9F9F9;
 }
 
@@ -33,15 +34,5 @@ h1,h2,h3,h4{
 
 .vw{
   width: 100vw;
-}
-
-hr {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
 }
 

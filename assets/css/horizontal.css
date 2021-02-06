@@ -1,4 +1,17 @@
+.main{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
 .horizontal{
-    background-color: #E75D38;
-    height: 5rem;
+    height: 5.5rem;
+}
+
+.horizontal-right{
+    background-color: #FFAA44;
+}
+
+.horizontal-left{
+    background-color: #FFA231;
 }

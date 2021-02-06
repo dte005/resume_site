@@ -10,16 +10,66 @@
   <body>
     <div class="resume container-fluid">
       <!--Menu horizontal-->
-      <div class="horizontal row">
-        teste
-      </div>
-      <!--Conteudo site-->
       <div class="row">
-        <div class="vh sidebar col-2">
-          teste
+        <div class="horizontal horizontal-left col-2">
+          <div class="row horizontal justify-content-center align-items-center">
+            <div><span class="main">Resume</span></div>
+          </div>
         </div>
-        <div class="vh col-10">
-          teste
+        <div class="horizontal horizontal-right col-10"></div>
+      </div>
+      <!--Content-->
+      <div class="row">
+        <!--Sidebar-->
+        <div class="vh sidebar col-2">
+          <div class="row">
+            <ul>
+              <li id="pagAboutme" class="active"><i class="far fa-address-card"></i>About Me</li>
+              <li id="pagExperience"><i class="fas fa-laptop-code"></i>Experience</li>
+              <li id="pagPortfolio"><i class="fas fa-clone"></i>Portfolio</li>
+              <li id="pagTech"><i class="fab fa-sketch"></i>Technologies</li>
+              <li id="pagDownload"><i class="fas fa-download"></i>Download</li>
+            </ul>
+          </div>
+        </div>
+        <!--Content About Me-->
+        <div id="aboutme" class="vh col-10">
+          <div class="titleRow vw row bColor">
+            <span>About Me</span>
+          </div>
+          <div class="contentRow vw row bColor">
+            <span>teste</span>
+          </div>
+        </div>
+        <!--Content Experience-->
+        <!-- style="display:none" -->
+        <div id="experience" class="vh col-10" style="display:none;">
+          <div class="titleRow vw row bColor">
+            <span>Experience</span>
+          </div>
+          <div class="contentRow vw row bColor">
+            <span>teste</span>
+          </div>
+        </div>
+        <!--Content Portfolio-->
+        <!-- style="display:none" -->
+        <div id="portfolio" class="vh col-10" style="display:none;">
+          <div class="titleRow vw row bColor">
+            <span>Portfolio</span>
+          </div>
+          <div class="contentRow vw row bColor">
+            <span>teste</span>
+          </div>
+        </div>
+        <!--Content Technologies-->
+        <!-- style="display:none" -->
+        <div id="tech" class="vh col-10" style="display:none;">
+          <div class="titleRow vw row bColor">
+            <span>Tech</span>
+          </div>
+          <div class="contentRow vw row bColor">
+            <span>teste</span>
+          </div>
         </div>
       </div>
     </div>
@@ -27,5 +77,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+    <script src="./assets/js/index.js"></script>
+    </body>
 </html>
