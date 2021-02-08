@@ -1,5 +1,5 @@
 .sidebar{
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid rgb(236, 231, 231);
     background-color: #FFFFFF;
     padding-top: 20px;
     color: #2c3e50;
@@ -8,20 +8,18 @@
 .sidebar ul{
     width:100vw;
     height: 100vh;
-    font-size: 1.6rem;
 }
-
 .sidebar ul li{
     text-align: left;
     padding: 15px;
     font-size: 1.3rem;
+    padding-left: 50px;
 }
 
 .active{
     background-color: #FFC989;
     color: white;
 }
-
 .sidebar ul li:hover{
     background-color: #FFC989;
     color: white;
@@ -29,4 +27,26 @@
 
 .sidebar ul li i{
     margin-right: 10px;
+}
+
+.menu-cel{
+    border-bottom: 1px solid rgb(236, 231, 231);
+    background-color: #FFFFFF;
+}
+
+.menu-cel ul li:hover{
+    background-color: #FFC989;
+    color: white;
+}
+
+@media screen and (min-width: 1500px){
+    .menu-cel{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1500px){
+    .sidebar{
+        display: none;
+    }
 }

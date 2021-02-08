@@ -15,3 +15,24 @@
 .horizontal-left{
     background-color: #FFA231;
 }
+
+#hamb{
+    display: none;
+}
+
+@media screen and (max-width: 640px){
+    .horizontal span{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1500px){
+    #hamb{
+        display: block;
+    }
+
+    #hamb span{
+        font-size: 1.5rem;
+        color: white;
+    }
+}

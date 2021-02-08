@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
     <script src="https://kit.fontawesome.com/3bb5488a16.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -11,12 +12,30 @@
     <div class="resume container-fluid">
       <!--Menu horizontal-->
       <div class="row">
-        <div class="horizontal horizontal-left col-2">
+        <div class="horizontal horizontal-left col-3 col-sm-3 col-md-2 col-lg-2">
           <div class="row horizontal justify-content-center align-items-center">
             <div><span class="main">Resume</span></div>
           </div>
         </div>
-        <div class="horizontal horizontal-right col-10"></div>
+        <div class="horizontal horizontal-right col-9 col-sm-9 col-md-10 col-lg-10">
+          <div class="horizontal row justify-content-end">
+            <div id="hamb" class="align-self-center mr-3"><span><i class="fas fa-bars"></i></span></div>
+          </div>
+        </div>
+      </div>
+      <!--Menu Movel-->
+      <div id="menu-cel" class="menu-cel row d-none">
+        <div class="col-12">
+          <div class="menu-cel-list row pt-2">
+            <ul class="vw">
+              <li id="pagAboutmeCel" class="active p-2"><i class="far fa-address-card mr-2"></i><span>About Me</span></li>
+              <li id="pagExperienceCel" class="p-2"><i class="fas fa-laptop-code mr-2"></i><span>Experience</span></li>
+              <li id="pagPortfolioCel" class="p-2"><i class="fas fa-clone mr-2"></i><span>Portfolio</span></li>
+              <li id="pagTechCel" class="p-2"><i class="fab fa-sketch mr-2"></i><span>Technologies</span></li>
+              <li id="pagDownloadCel" class="p-2"><i class="fas fa-download mr-2"></i><span>Download</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <!--Content-->
       <div class="row">
@@ -24,7 +43,7 @@
         <div class="vh sidebar col-2">
           <div class="row">
             <ul>
-              <li id="pagAboutme" class="active"><i class="far fa-address-card"></i>About Me</li>
+              <li id="pagAboutme" class="active"><i class="far fa-address-card"></i><span>About Me</span></li>
               <li id="pagExperience"><i class="fas fa-laptop-code"></i>Experience</li>
               <li id="pagPortfolio"><i class="fas fa-clone"></i>Portfolio</li>
               <li id="pagTech"><i class="fab fa-sketch"></i>Technologies</li>
@@ -33,41 +52,49 @@
           </div>
         </div>
         <!--Content About Me-->
-        <div id="aboutme" class="vh col-10">
-          <div class="titleRow vw row bColor">
+        <div id="aboutme" class="vh col-12 col-sm-12 col-md-12 col-lg-10">
+          <div class="title-row row">
             <span>About Me</span>
           </div>
-          <div class="contentRow vw row bColor">
-            <span>teste</span>
+          <div class="content-row row">
+            <div class="col-12">
+              <div class="card-item row">
+                <div class="col">
+                  <div class="card-content row bColor">
+                    Daniel
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!--Content Experience-->
         <!-- style="display:none" -->
         <div id="experience" class="vh col-10" style="display:none;">
-          <div class="titleRow vw row bColor">
+          <div class="title-row row">
             <span>Experience</span>
           </div>
-          <div class="contentRow vw row bColor">
+          <div class="content-row row">
             <span>teste</span>
           </div>
         </div>
         <!--Content Portfolio-->
         <!-- style="display:none" -->
         <div id="portfolio" class="vh col-10" style="display:none;">
-          <div class="titleRow vw row bColor">
+          <div class="title-row row">
             <span>Portfolio</span>
           </div>
-          <div class="contentRow vw row bColor">
+          <div class="content-row row">
             <span>teste</span>
           </div>
         </div>
         <!--Content Technologies-->
         <!-- style="display:none" -->
         <div id="tech" class="vh col-10" style="display:none;">
-          <div class="titleRow vw row bColor">
+          <div class="title-row row">
             <span>Tech</span>
           </div>
-          <div class="contentRow vw row bColor">
+          <div class="content-row row">
             <span>teste</span>
           </div>
         </div>
@@ -78,5 +105,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/menu.js"></script>
     </body>
 </html>
