@@ -1,6 +1,6 @@
 @import url('./templates/card-item.css');
 
-#aboutme{
+.all{
     padding-top: 20px;
     padding-right: 50px;
     padding-left: 50px;
@@ -15,4 +15,15 @@
     font-size: 2.5rem;
     font-weight: bold;
     color: #2c3e50;
+}
+
+@media screen and (max-width: 640px){
+    .all{
+        padding-right: 90px;
+        padding-left: 90px;
+    }
+
+    .title-row{
+        justify-content: center;
+    }
 }

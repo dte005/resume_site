@@ -1,6 +1,34 @@
 .card-item{
     border: 1px solid rgb(236, 231, 231);
     background-color: #FFFFFF;
-    height: 10rem;
     padding: 20px;
+}
+
+.card-item-profile{
+    border: 1px solid rgb(236, 231, 231);
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-top-left-radius: 12rem;
+    border-bottom-left-radius: 12rem;
+}
+
+.card-item-profile img{
+    width: 200px;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 640px){
+    .card-item-profile{
+        border-top-left-radius: 12rem;
+        border-top-right-radius: 12rem;
+        border-bottom-left-radius: 0rem;
+        justify-content: flex-start;
+    }
+
+    .profile{
+        justify-content: center;
+    }
 }

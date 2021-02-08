@@ -17,11 +17,21 @@ body{
 }
 
 p{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
 }
 
 h1,h2,h3,h4{
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.subtitle span{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.icons img{
+  width: 50px;
 }
 
 .bColor{
