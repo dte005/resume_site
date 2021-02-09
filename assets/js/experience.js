@@ -1,7 +1,8 @@
 const exps = [
     {
         "empresa": "DGT",
-        "jobDescription": "Desenvolvedor Pleno em Javascript",
+        "imagem": "https://media-exp1.licdn.com/dms/image/C4D0BAQE8I5Ja1LhlgA/company-logo_200_200/0/1545915893521?e=2159024400&v=beta&t=1nJ65K2a1JpFIkx8anPZgGbG-OTKp4ZUYiLRQgr0MRI",
+        "jobDescription": "Desenvolver soluções em automatização de processos corporativos através de ferramentas em BPMN e também entregar soluções web que agreguem valor aos processos automatizados. <p>Através do javascript e frameworks de mercado atendemos as demandas dos nossos clientes.",
         "inicio": "08/02/2021",
         "final": "08/02/2021",
         "funcaoInicial": "Desenvolvedor pleno",
@@ -18,7 +19,8 @@ const exps = [
     },
     {
         "empresa": "Wartsila",
-        "jobDescription": "Supervisor de automação responsável pela porra toda",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-kkZVC7kQK0hKUVsZk4qVxfAS2vTZNmQ-Q&usqp=CAU",
+        "jobDescription": "Responsável pelo comissionamento de motores navais, assim como, prestar atendimento pós venda.<p> Desenvolver soluções emm automações industrial utilizando controladores lógicos e atuadores.<p> Prover relatórios de serviços completos para análise de garantia.",
         "inicio": "08/02/2021",
         "final": "08/02/2021",
         "funcaoInicial": "Supervisor de automação",
@@ -61,11 +63,20 @@ exps.forEach(hit=>{
     //Carregando os projetos
     let list = novo.getElementsByClassName('projetos-list')[0];
     hit.projetos.forEach(proj=>{
-        let item = document.createElement('li');
-        item.innerHTML = proj.nome;
-        list.append(item);
+        const div = document.createElement('div');
+        div.classList.add('tecnologias');
+        div.innerHTML = proj.nome;
+        div.dataset.id = proj.nome;
+        div.style.cursor = "pointer";
+        div.addEventListener('click', function(ev){
+            console.log(ev.target.dataset.id);
+        })
+        list.append(div);
     })
 
+    let imagem = novo.getElementsByClassName('projetos-img')[0];
+    imagem.src = hit.imagem;
+    
     novo.classList.remove('d-none');
     exp.append(novo);
 });

@@ -14,7 +14,7 @@
       <div class="row">
         <div class="horizontal horizontal-left col-3 col-sm-3 col-md-2 col-lg-2">
           <div class="row horizontal justify-content-center align-items-center">
-            <div><span class="main">Resume</span></div>
+            <div><span class="main">Resumé</span></div>
           </div>
         </div>
         <div class="horizontal horizontal-right col-9 col-sm-9 col-md-10 col-lg-10">
@@ -30,7 +30,6 @@
             <ul class="vw">
               <li id="pagAboutmeCel" class="active p-2"><i class="far fa-address-card mr-2"></i><span>Sobre mim</span></li>
               <li id="pagExperienceCel" class="p-2"><i class="fas fa-laptop-code mr-2"></i><span>Experiencia</span></li>
-              <li id="pagPortfolioCel" class="p-2"><i class="fas fa-clone mr-2"></i><span>Portfolio</span></li>
               <li id="pagTechCel" class="p-2"><i class="fas fa-thumbtack mr-2"></i><span>Cursos</span></li>
               <li id="pagDownloadCel" class="p-2"><i class="fas fa-download mr-2"></i><span>Download</span></li>
             </ul>
@@ -45,7 +44,6 @@
             <ul>
               <li id="pagAboutme" class="active"><i class="far fa-address-card"></i><span>Sobre mim</span></li>
               <li id="pagExperience"><i class="fas fa-laptop-code"></i>Experiencia</li>
-              <li id="pagPortfolio"><i class="fas fa-clone"></i>Portfolio</li>
               <li id="pagTech"><i class="fas fa-thumbtack"></i>Cursos</li>
               <li id="pagDownload"><i class="fas fa-download"></i>Download</li>
             </ul>
@@ -177,7 +175,7 @@
               <!-- Será repetido -->
               <div id="exp-card" class="card-item row mb-2 d-none">
                 <div class="col-2 col-md-4 col-lg-2">
-                  <div class="subtitle mb-2"><span><i class="fas fa-info-circle mr-3"></i>Informações</span></div>
+                  <div class="subtitle mb-2"><span><i class="fas fa-info-circle mr-3 mb-4"></i>Informações</span></div>
                   <form action="">
                     <div class="form-group">
                       <label class="font-weight-bold" for="">Empresa:</label>
@@ -196,78 +194,34 @@
                       <span class="info-form"> Desenvolvedor Pleno</span>
                     </div>
                     <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input info-form" id="exampleCheck1">
+                      <input type="checkbox" class="form-check-input info-form" id="exampleCheck1" disabled>
                       <label class="form-check-label" for="exampleCheck1">Cargo Atual</label>
                     </div>
                   </form>
                 </div>
                 <div class="col-10 col-md-8 col-lg-6">
-                  <div class="subtitle mb-2"><span><i class="fas fa-align-left mr-3"></i>Descrição de atuação</span></div>
+                  <div class="subtitle mb-2"><span><i class="fas fa-align-left mr-3 mb-4"></i>Descrição de atuação</span></div>
                   <article class="descr">
                     Atuando como desenvolvedor pleno, onde a principal função é desenvolver soluções web que visam a automatização de processos corporatios.
                     <p>Prover suporte para os clientes em suas plataformas assim como resolver problemas.</p>
                     <p>Através da plataforma de BPMN automatizar processos corporativos complexos.</p>
                   </article>
                 </div>
-                <div class="col-10 col-md-8 col-lg-4">
-                  <div class="subtitle mb-2"><span><i class="fas fa-project-diagram mr-3"></i>Projetos</span></div>
-                  <div class="row">
-                    <ul class="projetos-list">                      
-                    </ul>
+                <div class="col-9 col-md-7 col-lg-3">
+                  <div class="subtitle mb-2"><span><i class="fas fa-project-diagram mr-3 mb-4"></i>Projetos</span></div>
+                  <div id="projetos" class="row projetos-list" data-toggle="modal" data-target=".janela-projetos">
+                  </div>
+                </div>
+                <div class="col-1 col-md-1 col-lg-1">
+                  <div class="row justify-content-end">
+                    <div class="icons"><img class="projetos-img" src=""></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!--Content Portfolio-->
-        <!-- style="display:none" -->
-        <div id="portfolio" class="all vh col-10" style="display:none;">
-          <div class="title-row row">
-            <span>Portfolio</span>
-          </div>
-          <div class="content-row row">
-            <div id="portfolio" class="col-12">
-              <!-- Será repetido -->
-              <div id="port-card" class="card-item row mb-2">
-                <div class="col-2 col-md-4 col-lg-2">
-                  <div class="subtitle mb-2"><span><i class="fas fa-info-circle mr-3"></i>Informações</span></div>
-                  <form action="">
-                    <div class="form-group">
-                      <label class="font-weight-bold" for="">Empresa:</label>
-                      <span class="info-form"> DGT</span>
-                    </div>
-                    <div class="form-group">
-                      <label class="font-weight-bold" for="">Início:</label>
-                      <span class="info-form"> 08/02/2021</span>
-                    </div>
-                    <div class="form-group">
-                      <label class="font-weight-bold" for="">Fim:</label>
-                      <span class="info-form"> 08/02/2021</span>
-                    </div>
-                    <div class="form-group">
-                      <label class="font-weight-bold" for="">Função Inicial:</label>
-                      <span class="info-form"> Desenvolvedor Pleno</span>
-                    </div>
-                    <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input info-form" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Cargo Atual</label>
-                    </div>
-                  </form>
-                </div>
-                <div class="col-10 col-md-8 col-lg-6">
-                  <div class="subtitle mb-2"><span><i class="fas fa-align-left mr-3"></i>Descrição de atuação</span></div>
-                  <article class="descr">
-                    Atuando como desenvolvedor pleno, onde a principal função é desenvolver soluções web que visam a automatização de processos corporatios.
-                    <p>Prover suporte para os clientes em suas plataformas assim como resolver problemas.</p>
-                    <p>Através da plataforma de BPMN automatizar processos corporativos complexos.</p>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Content Technologies-->
+        <!--Content Cursos-->
         <!-- style="display:none" -->
         <div id="tech" class="all vh col-10" style="display:none;">
           <div class="title-row row">
@@ -279,6 +233,36 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal para projetos -->
+    <div class="modal fade bd-example-modal-lg janela-projetos" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Projeto 1</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

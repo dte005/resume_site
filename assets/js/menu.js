@@ -4,7 +4,6 @@ const menuCel= document.getElementById('menu-cel');
 //Link
 const pagAboutmeCel = document.getElementById('pagAboutmeCel');
 const pagExperienceCel = document.getElementById('pagExperienceCel');
-const pagPortfolioCel = document.getElementById('pagPortfolioCel');
 const pagTechCel = document.getElementById('pagTechCel');
 
 hamb.addEventListener('click', function(e){
@@ -42,20 +41,6 @@ pagExperienceCel.addEventListener('click', function(ev){
     //Alterando a cor de fundo
     pagExperienceCel.classList.add('active');
     pagExperience.classList.add('active');
-});
-
-pagPortfolioCel.addEventListener('click', function(ev){
-    //Mudando o qyue irá mopstrar
-    divAboutme.style.display = "none";
-    divExperience.style.display = "none";
-    divPortfolio.style.display = "block";
-    divTech.style.display = "none";
-
-    removeActive();
-
-    //Alterando a cor de fundo
-    pagPortfolioCel.classList.add('active');
-    pagPortfolio.classList.add('active');
 });
 
 pagTechCel.addEventListener('click', function(ev){
