@@ -17,12 +17,12 @@
 }
 
 .active{
-    background-color: #FFC989;
-    color: white;
+    background-color: #F7F7F7;
+    color: #3F599E;
 }
 .sidebar ul li:hover{
-    background-color: #FFC989;
-    color: white;
+    background-color: #F7F7F7;
+    color: #3F599E;
 }
 
 .sidebar ul li i{
@@ -34,9 +34,9 @@
     background-color: #FFFFFF;
 }
 
-.menu-cel ul li:hover{
-    background-color: #FFC989;
-    color: white;
+.menu-cel-list ul li:hover{
+    background-color: #F7F7F7;
+    color: #3F599E;
 }
 
 @media screen and (min-width: 1500px){

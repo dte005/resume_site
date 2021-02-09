@@ -73,3 +73,13 @@ function removeActive(){
         element.classList.remove('active');
     })
 }
+
+const tecs = ["Javascrip", "CSS", "NodeJS", "HTML", "Heroku", "GIT", "GitHub"];
+const divTec = document.getElementById('tecnologias');
+
+tecs.forEach(tec=>{
+    const div = document.createElement('div');
+    div.classList.add('tecnologias');
+    div.innerHTML = tec;
+    divTec.append(div);
+})

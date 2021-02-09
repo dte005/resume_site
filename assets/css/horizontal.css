@@ -5,15 +5,17 @@
 }
 
 .horizontal{
-    height: 5.5rem;
+    height: 4rem;
 }
 
 .horizontal-right{
-    background-color: #FFAA44;
+    /* background-color: #FFAA44; */
+    background-color: #4460AA
 }
 
 .horizontal-left{
-    background-color: #FFA231;
+    /* background-color: #FFA231; */
+    background-color: #3F599E
 }
 
 #hamb{

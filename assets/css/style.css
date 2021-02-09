@@ -38,9 +38,9 @@ h1,h2,h3,h4{
   border: 2px solid red
 }
 
-.vh{
+/* .vh{
   height: 100vh;
-}
+} */
 
 .vw{
   width: 100vw;
