@@ -19,7 +19,6 @@ pagAboutmeCel.addEventListener('click', function(ev){
     //Mudando o que irá mostrar
     divAboutme.style.display = "block";
     divExperience.style.display = "none";
-    divPortfolio.style.display = "none";
     divTech.style.display = "none";
 
     removeActive();
@@ -33,7 +32,6 @@ pagExperienceCel.addEventListener('click', function(ev){
     //Mudando o qyue irá mopstrar
     divAboutme.style.display = "none";
     divExperience.style.display = "block";
-    divPortfolio.style.display = "none";
     divTech.style.display = "none";
 
     removeActive();
@@ -41,13 +39,14 @@ pagExperienceCel.addEventListener('click', function(ev){
     //Alterando a cor de fundo
     pagExperienceCel.classList.add('active');
     pagExperience.classList.add('active');
+
+    getExperiences();
 });
 
 pagTechCel.addEventListener('click', function(ev){
     //Mudando o qyue irá mopstrar
     divAboutme.style.display = "none";
     divExperience.style.display = "none";
-    divPortfolio.style.display = "none";
     divTech.style.display = "block";
 
     removeActive();

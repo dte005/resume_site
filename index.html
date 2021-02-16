@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <script src="https://kit.fontawesome.com/3bb5488a16.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+    <div class="text-center overlay" id="spinner">
+      <div class="spinner-border" style="width: 10rem; height: 10rem;" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
     <div class="resume container-fluid">
       <!--Menu horizontal-->
       <div class="row">
@@ -63,9 +69,10 @@
                   </div>
                 </div>
                 <div class="profile align-self-center col-12 col-md-5 col-lg-3">
-                  <h1>Daniel Silva</h1>
+                  <!-- Entra o nommme via AJAX -->
+                  <h1 id="nome"></h1> 
                   <p id="banner-box-content-p1"><strong>Engenheiro de Computação</strong></p>
-                  <p id="banner-box-content-p2"><i class="fas fa-at"></i> danieldts2013@gmail.com</p>
+                  <p id="banner-box-content-p2"><i class="fas fa-at"></i> <span id="email"></span></p>
                   <a href="https://github.com/dte005" target="_blank"><p id="banner-box-content-p3"><i class="fab fa-github"></i> github.com/dte005</p></a>
                 </div>
               </div>
@@ -165,56 +172,110 @@
           </div>
         </div>
         <!--Content Experience-->
-        <!-- style="display:none" -->
         <div id="experience" class="all vh col-10" style="display:none;">
           <div class="title-row row">
             <span>Experiências</span>
           </div>
-          <div class="content-row row">
-            <div id="experience" class="col-12">
-              <!-- Será repetido -->
-              <div id="exp-card" class="card-item row mb-2 d-none">
-                <div class="col-2 col-md-4 col-lg-2">
-                  <div class="subtitle mb-2"><span><i class="fas fa-info-circle mr-3 mb-4"></i>Informações</span></div>
-                  <form action="">
-                    <div class="form-group">
-                      <label class="font-weight-bold" for="">Empresa:</label>
-                      <span class="info-form"> DGT</span>
-                    </div>
-                    <div class="form-group">
-                      <label class="font-weight-bold" for="">Início:</label>
-                      <span class="info-form"> 08/02/2021</span>
-                    </div>
-                    <div class="form-group">
-                      <label class="font-weight-bold" for="">Fim:</label>
-                      <span class="info-form"> 08/02/2021</span>
-                    </div>
-                    <div class="form-group">
-                      <label class="font-weight-bold" for="">Função Inicial:</label>
-                      <span class="info-form"> Desenvolvedor Pleno</span>
-                    </div>
-                    <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input info-form" id="exampleCheck1" disabled>
-                      <label class="form-check-label" for="exampleCheck1">Cargo Atual</label>
-                    </div>
-                  </form>
+          <div class="row">
+            <div class="col-12 m-0 p-0">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active tab-title" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Profissionais</a>
+                  <a class="nav-item nav-link tab-title" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Educacionais</a>
                 </div>
-                <div class="col-10 col-md-8 col-lg-6">
-                  <div class="subtitle mb-2"><span><i class="fas fa-align-left mr-3 mb-4"></i>Descrição de atuação</span></div>
-                  <article class="descr">
-                    Atuando como desenvolvedor pleno, onde a principal função é desenvolver soluções web que visam a automatização de processos corporatios.
-                    <p>Prover suporte para os clientes em suas plataformas assim como resolver problemas.</p>
-                    <p>Através da plataforma de BPMN automatizar processos corporativos complexos.</p>
-                  </article>
-                </div>
-                <div class="col-9 col-md-7 col-lg-3">
-                  <div class="subtitle mb-2"><span><i class="fas fa-project-diagram mr-3 mb-4"></i>Projetos</span></div>
-                  <div id="projetos" class="row projetos-list" data-toggle="modal" data-target=".janela-projetos">
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <!-- Profissional -->
+                  <div class="content-row row">
+                    <div id="experience-item" class="col-12">
+                      <!-- Será repetido -->
+                      <div id="exp-card" class="card-item row mb-2 mt-2 d-none">
+                        <div class="col-2 col-md-4 col-lg-2">
+                          <div class="subtitle mb-2"><span><i class="fas fa-info-circle mr-3 mb-4"></i>Informações</span></div>
+                          <form action="">
+                            <div class="form-group">
+                              <label class="font-weight-bold" for="">Empresa:</label>
+                              <span class="info-form"> DGT</span>
+                            </div>
+                            <div class="form-group">
+                              <label class="font-weight-bold" for="">Início:</label>
+                              <span class="info-form"> 08/02/2021</span>
+                            </div>
+                            <div class="form-group">
+                              <label class="font-weight-bold" for="">Fim:</label>
+                              <span class="info-form"> 08/02/2021</span>
+                            </div>
+                            <div class="form-group">
+                              <label class="font-weight-bold" for="">Função Inicial:</label>
+                              <span class="info-form"> Desenvolvedor Pleno</span>
+                            </div>
+                            <div class="form-group form-check">
+                              <input type="checkbox" class="form-check-input info-form" id="cargo-p" disabled>
+                              <label class="form-check-label" for="cargo-p">Cargo Atual</label>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-10 col-md-8 col-lg-6">
+                          <div class="subtitle mb-2"><span><i class="fas fa-align-left mr-3 mb-4"></i>Descrição de atuação</span></div>
+                          <article class="descr">
+                            Atuando como desenvolvedor pleno, onde a principal função é desenvolver soluções web que visam a automatização de processos corporatios.
+                            <p>Prover suporte para os clientes em suas plataformas assim como resolver problemas.</p>
+                            <p>Através da plataforma de BPMN automatizar processos corporativos complexos.</p>
+                          </article>
+                        </div>
+                        <div class="col-9 col-md-7 col-lg-3">
+                          <div class="subtitle mb-2"><span><i class="fas fa-project-diagram mr-3 mb-4"></i>Projetos</span></div>
+                          <div id="projetos" class="row projetos-list" data-toggle="modal" data-target=".janela-projetos">
+                          </div>
+                        </div>
+                        <div class="col-1 col-md-1 col-lg-1">
+                          <div class="row justify-content-end">
+                            <div class="icons"><img class="projetos-img" src=""></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-1 col-md-1 col-lg-1">
-                  <div class="row justify-content-end">
-                    <div class="icons"><img class="projetos-img" src=""></div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <!-- Educacional -->
+                  <div class="content-row row">
+                    <div id="experience-e-item" class="col-12">
+                      <!-- Será repetido -->
+                      <div id="exp-e-card" class="card-item row mb-2 mt-2 d-none">
+                        <div class="col-2 col-md-4 col-lg-2">
+                          <div class="subtitle mb-2"><span><i class="fas fa-info-circle mr-3 mb-4"></i>Informações</span></div>
+                          <form action="">
+                            <div class="form-group">
+                              <label class="font-weight-bold" for="">Empresa:</label>
+                              <span class="info-e-form"> DGT</span>
+                            </div>
+                            <div class="form-group">
+                              <label class="font-weight-bold" for="">Início:</label>
+                              <span class="info-e-form"> 08/02/2021</span>
+                            </div>
+                            <div class="form-group">
+                              <label class="font-weight-bold" for="">Fim:</label>
+                              <span class="info-e-form"> 08/02/2021</span>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-10 col-md-8 col-lg-6">
+                          <div class="subtitle mb-2"><span><i class="fas fa-align-left mr-3 mb-4"></i>Descrição de atuação</span></div>
+                          <article class="descr">
+                            Atuando como desenvolvedor pleno, onde a principal função é desenvolver soluções web que visam a automatização de processos corporatios.
+                            <p>Prover suporte para os clientes em suas plataformas assim como resolver problemas.</p>
+                            <p>Através da plataforma de BPMN automatizar processos corporativos complexos.</p>
+                          </article>
+                        </div>
+                        <div class="col-1 col-md-1 col-lg-1">
+                          <div class="row justify-content-end">
+                            <div class="icons"><img class="projetos-img" src=""></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -222,13 +283,36 @@
           </div>
         </div>
         <!--Content Cursos-->
-        <!-- style="display:none" -->
         <div id="tech" class="all vh col-10" style="display:none;">
           <div class="title-row row">
             <span>Cursos</span>
           </div>
           <div class="content-row row">
-            <span>teste</span>
+            <div class="col m-0 p-0">
+              <table 
+              id="table"
+              data-toggle="table" 
+              data-ajax="ajaxRequest"
+              data-search="true"
+              data-search-align="left"
+              data-side-pagination="server"
+              data-page-list="[10,20,30]"
+              data-locale="pt-BR"
+              data-pagination="true"
+              class="bTable">
+                <thead>
+                  <tr>
+                    <th data-field="id">ID</th>
+                    <th data-field="institution" data-sortable="true">Instituição</th>
+                    <th data-field="title" data-sortable="true">Título</th>
+                    <th data-field="description">Descr.</th>
+                    <th data-field="startDate">Data Inicial</th>
+                    <th data-field="finalDate">Data Final</th>
+                    <th data-field="important" data-sortable="true" data-formatter="colorFormatter">Important</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -237,9 +321,9 @@
     <!-- Modal para projetos -->
     <div class="modal fade bd-example-modal-lg janela-projetos" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+        <div id="projeto-item" class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Projeto 1</h5>
+            <h5 class="modal-title" id="exampleModalLabel"><span class="info-proj"></span></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -247,12 +331,17 @@
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
+                <label for="recipient-name" class="col-form-label">Descrição:</label>
+                <span class="info-proj"></span>
               </div>
               <div class="form-group">
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
+                <label for="message-text" class="col-form-label">Tecnologias:</label>
+                <div id="projetos" class="row info-proj">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Funcionalidades:</label>
+                <span class="info-proj"></span>
               </div>
             </form>
           </div>
@@ -262,13 +351,36 @@
         </div>
       </div>
     </div>
-
+    
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"></script>
+    <script src="./assets/js/auth.js"></script>
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/experience.js"></script>
+    <script>
+      // your custom ajax request here
+      function ajaxRequest(params) {
+        let url = "https://resume-nodejs-mysql.herokuapp.com/courses/user/1";
+        fetch(url + '?' + $.param(params.data), {headers: {'Content-Type': 'application/json'}})
+        .then(result=>{
+          return result.json();
+        })
+        .then(data=>{
+          params.success(data);
+        });
+      }
+
+      function colorFormatter(value){
+        if(value){
+          return `<div class="d-flex flex-row justify-content-center"><i class="fas fa-star fa-lg" style="color:orange;"></i></div>`
+        }
+
+      }
+    </script>
+    <!-- Bootstrap table -->
     </body>
 </html>

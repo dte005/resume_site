@@ -8,6 +8,10 @@ const divAboutme = document.getElementById('aboutme');
 const divExperience = document.getElementById('experience');
 const divTech = document.getElementById('tech');
 
+//Variáveis da páginas
+const nome = document.getElementById('nome');
+const email = document.getElementById('email');
+
 //Listeners dos botões
 pagAboutme.addEventListener('click', function(ev){
     //Mudando o que irá mostrar
@@ -33,6 +37,8 @@ pagExperience.addEventListener('click', function(ev){
     //Alterando a cor de fundo
     pagExperience.classList.add('active');
     pagExperienceCel.classList.add('active');
+
+    getExperiences();
 });
 
 pagTech.addEventListener('click', function(ev){
@@ -51,16 +57,41 @@ pagTech.addEventListener('click', function(ev){
 function removeActive(){
     let active = document.getElementsByClassName('active');
     Array.from(active).forEach(element=>{
-        element.classList.remove('active');
-    })
+        if(element.id !== "nav-home-tab" && element.id !== "nav-home"){
+            element.classList.remove('active');
+        }
+    });
 }
 
-const tecs = ["Javascrip", "CSS", "NodeJS", "HTML", "Heroku", "GIT", "GitHub"];
-const divTec = document.getElementById('tecnologias');
+//Realizando o login e em seguida chama o readUser
+signin();
 
-tecs.forEach(tec=>{
-    const div = document.createElement('div');
-    div.classList.add('tecnologias');
-    div.innerHTML = tec;
-    divTec.append(div);
-})
+function readUser(token){
+    const url="https://resume-nodejs-mysql.herokuapp.com/user/1";
+    return fetch(url, {headers: {"Content-Type": "application/json", 'Authorization': 'Bearer ' + token}})
+    .then(result=>{
+        return result.json();
+    })
+    .then(data=>{
+        nome.innerHTML = data.firstName + " " + data.lastName;
+        email.innerHTML = data.email;
+        let urlData="https://resume-nodejs-mysql.herokuapp.com/technologies/user/1";
+        return fetch(urlData, {headers: {"Content-Type": "application/json"}})
+    })
+    .then(result=>{
+        return result.json()
+    })
+    .then(result=>{
+        console.log(result);
+        const divTec = document.getElementById('tecnologias');
+
+        result.forEach(tec=>{
+            const div = document.createElement('div');
+            div.classList.add('tecnologias');
+            div.innerHTML = tec.name;
+            divTec.append(div);
+        });
+        spinner.style.display = "none";
+        return result;
+    });
+}
