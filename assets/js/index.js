@@ -82,7 +82,6 @@ function readUser(token){
         return result.json()
     })
     .then(result=>{
-        console.log(result);
         const divTec = document.getElementById('tecnologias');
 
         result.forEach(tec=>{
