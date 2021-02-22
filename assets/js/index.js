@@ -12,6 +12,8 @@ const divTech = document.getElementById('tech');
 const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 
+let techs = [];
+
 //Listeners dos botões
 pagAboutme.addEventListener('click', function(ev){
     //Mudando o que irá mostrar
@@ -85,10 +87,13 @@ function readUser(token){
         const divTec = document.getElementById('tecnologias');
 
         result.forEach(tec=>{
-            const div = document.createElement('div');
-            div.classList.add('tecnologias');
-            div.innerHTML = tec.name;
-            divTec.append(div);
+            if(!techs.includes(tec.name)){
+                const div = document.createElement('div');
+                div.classList.add('tecnologias');
+                div.innerHTML = tec.name;
+                divTec.append(div);
+                techs.push(tec.name);
+            }
         });
         spinner.style.display = "none";
         return result;
